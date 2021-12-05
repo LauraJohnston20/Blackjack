@@ -1,6 +1,5 @@
 # Module containts the menu and rules for blackjack. Receives number of
 # players and starting balance for all players.
-
 import sys
 
 def menu():
