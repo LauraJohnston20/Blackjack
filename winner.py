@@ -1,4 +1,5 @@
-##calculate bets
+# Module contains logic for determining the winners by comparing player and dealer scores.
+# Module updates balance based on bet and results from score comparison.
 import time
 import dealer
 import sys
