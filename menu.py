@@ -1,9 +1,6 @@
-##Blackjack Menu
-
+# Module containts the menu and rules for blackjack. Receives number of
+# players and starting balance for all players.
 import sys
-"""This module containts the menu and rules for blackjack. It will also get
-number of placers and starting balance for all players. These will be stored
-in a list for each player : [player#, balance, score, bet]."""
 
 def menu():
     print()

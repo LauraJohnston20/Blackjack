@@ -1,6 +1,7 @@
-##calculate bets
+# Module contains logic for determining the winners by comparing player and dealer scores.
+# Module updates balance based on bet and results from score comparison.
 import time
-import main
+import dealer
 import sys
 
 def get_final_points(players, dealer_hand):
@@ -8,14 +9,14 @@ def get_final_points(players, dealer_hand):
     print("\n---------------------------FINAL SCORES-----------------------------\n")
     for index, player in enumerate(players):
         if player["lose"] != True:
-            score = main.card_total(player["hand"])
+            score = dealer.card_total(player["hand"])
             print("Player " + str(index+1) + " score: " + str(score))
-    dealer_score = main.card_total(dealer_hand)
+    dealer_score = dealer.card_total(dealer_hand)
     print("Dealer score: " + str(dealer_score))
 
 def get_winner(players, dealer_hand):
     out_count = 0
-    dealer_score = main.card_total(dealer_hand)
+    dealer_score = dealer.card_total(dealer_hand)
     time.sleep(1)
     print("\n-----------------------------RESULTS---------------------------------")
 
@@ -23,7 +24,7 @@ def get_winner(players, dealer_hand):
         if player["lose"] == True:
             out_count += 1
         else:            
-            player_score = main.card_total(player["hand"])
+            player_score = dealer.card_total(player["hand"])
             if (dealer_score < player_score) and player_score < 21 or (dealer_score > 21 and player_score < 21):
                 time.sleep(0.5)
                 print("\nPlayer " + str(index+1) + " WINS.")
@@ -51,13 +52,3 @@ def get_winner(players, dealer_hand):
         print("\n--------------------------------------------------------------------")
         print("\n\nALL PLAYERS ARE OUT OF MONEY. Thanks for playing!\n***PLEASE GAMBLE RESPONSIBLY***")
         sys.exit()
-
-    
-    
-            
-            
-                
-        
-    
-
-        

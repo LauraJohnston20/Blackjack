@@ -3,7 +3,7 @@
 import random
 import menu
 import time
-import main
+import dealer
 
 number_list = ["Ace", "Two", "Three", "Four", "Five", "Six",
                "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"]
@@ -51,11 +51,11 @@ def get_player_scores(players):
     print("\n------------------------------SCORES--------------------------------\n")
     for index, player in enumerate(players):
         if player["lose"] != True:
-            score = main.card_total(player["hand"])
+            score = dealer.card_total(player["hand"])
             print("Player " + str(index+1) + " Score: " + str(score))
 
 def get_dealer_score(dealer_hand):
     print("\n--------------------------------------------------------------------")
     print("\nDealers cards: " + dealer_hand[0][0] + " of " + dealer_hand[0][1] + " and " + dealer_hand[1][0] + " of " + dealer_hand[1][1])
-    dealer_score = main.card_total(dealer_hand)
+    dealer_score = dealer.card_total(dealer_hand)
     print("\nDealers score: " + str(dealer_score))
