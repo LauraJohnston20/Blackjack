@@ -1,8 +1,7 @@
-##Round BlackJack
+# Module contains round where player & dealer hit or stay.
 import time
 import main
 import deal
-"""This module contains the first round where the player will hit or stay."""
 
 def round(deck, players):
     time.sleep(0.5)
