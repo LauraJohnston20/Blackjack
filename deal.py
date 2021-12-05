@@ -1,4 +1,5 @@
-# Blackjack card deck
+# Deal module fills and shuffles the deck, and deals cards to each player and the dealer. 
+# Module caculates and displays player and dealer scores.
 import random
 import menu
 import time
