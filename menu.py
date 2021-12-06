@@ -28,6 +28,7 @@ def blackjack_rules():
     print("\tIf you go over 21, you bust and you lose your bet.\n\nOnce the round is complete, the dealer will flip their cards:")
     print("\tIf player is closer to 21 than the dealer, then player WINS their bet.")
     print("\tIf the dealer is closer to 21 then player LOSES their bet.")
+    print("\tIf the player balance is less than 5, player is out of the game.")
     print("\n\n\t\t\tGOOD LUCK\n\n")
 
 def get_players():
