@@ -77,7 +77,7 @@ def main():
           continue
       else: 
           print("\nThanks for playing BlackJack!")
-          print("We do not encourage gambling. \n***PLEASE GAMBLE RESPONSIBLY***")
+          print("We do not encourage gambling. \n***PLEASE PLAY RESPONSIBLY***")
           sys.exit()
 
 if __name__ == "__main__":
