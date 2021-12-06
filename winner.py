@@ -50,5 +50,5 @@ def get_winner(players, dealer_hand):
                 print("Balance:", player["balance"])
     if out_count == len(players):
         print("\n--------------------------------------------------------------------")
-        print("\n\nALL PLAYERS ARE OUT OF MONEY. Thanks for playing!\n***PLEASE GAMBLE RESPONSIBLY***")
+        print("\n\nALL PLAYERS ARE OUT OF MONEY. Thanks for playing!\n***PLEASE PLAY RESPONSIBLY***")
         sys.exit()
