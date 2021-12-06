@@ -18,8 +18,8 @@ def menu():
             print("Please choose yes or no.")
     
 def blackjack_rules():
-    print("\nBLACKJACK RULES")
-    print("Each participant attempts to beat the dealer by getting a count as close to 21 \nas possible, without going over 21.")
+    print("\n\t\t\tBLACKJACK RULES")
+    print("\nEach participant attempts to beat the dealer by getting a count as close to 21 \nas possible, without going over 21.")
     print("Ace can be worth 1 or 11, depending on your score. \nJack, Queen, and King are worth 10. All other cards are their number value.")
     print("\nPlace your bet. (Minimum bet is $5. Maximum bet is $1000).")
     print("\n\tIf the dealer has 21, all bets go to dealer.\n\tIf player has 21, they recieve double their bet.")
@@ -67,7 +67,7 @@ def get_balance(player_list):
 
 def get_bet(players):
     print("\n----------------------PLACE YOUR BETS-------------------------------")
-    print("---------------------MINIMUM: 5 MAX: 1000---------------------------")
+    print(".                  MINIMUM: 5 MAX: 1000")
     for index,player in enumerate(players):
         while True:
             try:
