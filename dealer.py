@@ -70,6 +70,7 @@ def main():
     # Options for progressing with game.         
             time.sleep(0.5)
             if next_round() == True:
+                  menu.get_player_count(players)
                   continue
             else:
                   break
