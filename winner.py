@@ -18,7 +18,7 @@ def get_winner(players, dealer_hand):
     out_count = 0
     dealer_score = dealer.card_total(dealer_hand)
     time.sleep(1)
-    print("\n-----------------------------RESULTS---------------------------------")
+    input("\n-------------------PRESS ENTER TO VIEW RESULTS----------------------")
 
     for index, player in enumerate(players):
         if player["lose"] == True:
